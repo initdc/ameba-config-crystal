@@ -1,11 +1,11 @@
 Style/ArrayLiteralSyntax:
-  Enabled: false
+  Enabled: true
 
 Style/GuardClause:
   Enabled: false
 
 Style/HashLiteralSyntax:
-  Enabled: false
+  Enabled: true
 
 Style/HeredocEscape:
   Enabled: true
@@ -35,7 +35,7 @@ Style/MultilineCurlyBlock:
   Enabled: false
 
 Style/MultilineStringLiteral:
-  Enabled: false
+  Enabled: true
   AllowBackslashSplitStrings: false
 
 Style/NegatedConditionsInUnless:
@@ -45,7 +45,7 @@ Style/ParenthesesAroundCondition:
   Enabled: true
   ExcludeTernary: true
   ExcludeMultiline: true
-  AllowSafeAssignment: true
+  AllowSafeAssignment: false
 
 Style/PercentLiteralDelimiters:
   Enabled: true
@@ -55,7 +55,7 @@ Style/PercentLiteralDelimiters:
     "%W": "[]"
     "%i": "[]"
     "%I": "[]"
-    "%r": "{}"
+    # "%r": "{}"
     "%x": "()"
   IgnoreLiteralsContainingDelimiters: false
 
@@ -71,10 +71,12 @@ Style/RedundantNilInControlExpression:
   Enabled: false
 
 Style/RedundantReturn:
-  Enabled: false
+  Enabled: true
+  AllowMultiReturn: true
+  AllowEmptyReturn: true
 
 Style/RedundantSelf:
-  Enabled: false
+  Enabled: true
   AllowedMethodNames:
     - in?
     - inspect
@@ -92,6 +94,10 @@ Style/VerboseBlock:
   ExcludeSetters: false
   MaxLineLength: ~
   MaxLength: ~
+
+Style/VerboseNilType:
+  Enabled: true
+  ExplicitNil: false
 
 Style/WhileTrue:
   Enabled: false
